@@ -131,18 +131,7 @@ function App() {
       <div className="chart-container"><Line data={spo2Data} /></div>
       <div className="chart-container"><Line data={tempData} /></div>
 
-      <div className="consultation-box">
-        <h2>🩺 Need a Doctor Consultation?</h2>
-        <p>Click below to connect with a doctor for further health analysis.</p>
-        <a 
-          href="https://hearttohear-frontend.onrender.com/" 
-          target="_blank" 
-          rel="noopener noreferrer"
-          className="consultation-button"
-        >
-          Consult a Doctor
-        </a>
-      </div>
+      
     </div>
   );
 }
