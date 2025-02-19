@@ -15,7 +15,7 @@ body::before {
   left: 0;
   width: 100%;
   height: 100%;
-  background: rgba(0, 0, 0, 0.65); /* Adjust opacity for more/less dimming */
+  background: rgba(0, 0, 0, 0.65);
   z-index: -1;
 }
 
@@ -58,25 +58,29 @@ body::before {
 }
 
 /* Alert & AI Suggestion Styling */
-.alert, .suggestion-box {
+.alert {
   margin-top: 20px;
   padding: 15px;
   font-weight: bold;
   border-radius: 10px;
   width: 60%;
   text-align: center;
-}
-
-.alert {
   background: rgba(255, 69, 58, 0.8);
   color: white;
   box-shadow: 0px 4px 8px rgba(255, 69, 58, 0.5);
 }
 
+/* Reduced AI Suggestion Box Size */
 .suggestion-box {
+  margin-top: 20px;
+  padding: 10px; /* Reduced padding */
+  font-size: 14px; /* Slightly smaller text */
+  font-weight: bold;
+  border-radius: 8px;
+  width: 40%; /* Reduced width */
+  text-align: center;
   background: rgba(32, 178, 170, 0.7);
   box-shadow: 0px 4px 8px rgba(32, 178, 170, 0.5);
-  border: 2px;
 }
 
 /* Consultation Box */
@@ -107,12 +111,12 @@ body::before {
   transform: translateY(-3px);
 }
 
-/* Chart Section with Dark Overlay */
+/* Chart Section */
 .chart-wrapper {
   display: flex;
-  flex-direction: column; /* Stack charts vertically */
+  flex-direction: column;
   align-items: center;
-  gap: 20px; /* Space between charts */
+  gap: 20px;
   width: 100%;
   margin-top: 30px;
 }
@@ -125,10 +129,10 @@ body::before {
   box-shadow: 0px 6px 12px rgba(255, 255, 255, 0.2);
   position: relative;
   overflow: hidden;
-  margin-bottom: 20px; /* Add space between charts */
+  margin-bottom: 20px;
 }
 
-/* Black overlay specifically for the chart */
+/* Dark overlay specifically for charts */
 .chart-container::before {
   content: "";
   position: absolute;
@@ -136,7 +140,7 @@ body::before {
   left: 0;
   width: 100%;
   height: 100%;
-  background: rgba(0, 0, 0, 0.7); /* Darker overlay for the chart */
+  background: rgba(0, 0, 0, 0.7);
   z-index: 1;
   border-radius: 10px;
 }
@@ -145,7 +149,7 @@ body::before {
 .chart-content {
   position: relative;
   z-index: 2;
-  color: white; /* Ensure all text values are visible */
+  color: white;
 }
 
 /* White chart lines */
