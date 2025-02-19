@@ -1,4 +1,3 @@
-/* Apply full-screen background */
 body {
   margin: 0;
   padding: 0;
@@ -107,12 +106,13 @@ body::before {
   transform: translateY(-3px);
 }
 
-/* Chart Section with its Own Dark Overlay */
+/* Chart Section with Dark Overlay */
 .chart-wrapper {
-  position: relative;
-  width: 100%;
   display: flex;
-  justify-content: center;
+  flex-direction: column; /* Stack charts vertically */
+  align-items: center;
+  gap: 20px; /* Space between charts */
+  width: 100%;
   margin-top: 30px;
 }
 
@@ -124,6 +124,7 @@ body::before {
   box-shadow: 0px 6px 12px rgba(255, 255, 255, 0.2);
   position: relative;
   overflow: hidden;
+  margin-bottom: 20px; /* Add space between charts */
 }
 
 /* Black overlay specifically for the chart */
@@ -143,4 +144,15 @@ body::before {
 .chart-content {
   position: relative;
   z-index: 2;
+  color: white; /* Ensure all text values are visible */
+}
+
+/* White chart lines */
+.chart-content path {
+  stroke: white !important;
+}
+
+/* White chart text for better visibility */
+.chart-content text {
+  fill: white !important;
 }
