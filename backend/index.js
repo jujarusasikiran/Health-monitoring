@@ -10,7 +10,7 @@ app.use(express.json());
 app.use(cors());
 
 // MongoDB connection (Using connection string directly)
-mongoose.connect('mongodb+srv://sasikiranjujaru:%24%40Si6711@healthmonitoringdb.qfo9p.mongodb.net/?retryWrites=true&w=majority&appName=HealthMonitoringDB', {
+mongoose.connect('mongodb+srv://sasikiranjujaru:%24%40Si6711@healthmonitoringdb.qfo9p.mongodb.net/database?retryWrites=true&w=majority&appName=HealthMonitoringDB', {
     useNewUrlParser: true,
     useUnifiedTopology: true
 }).then(() => {
